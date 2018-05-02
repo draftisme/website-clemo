@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body > div{
+    padding: 50px 100px 0px 100px;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+hr{
+    border-color: black;
+    width: 75px;
+    margin: 25px 0;
+}
+
+h3{
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+p{
+    color: #7E7D79;
+}
+
+button{
+    margin: 50px 0;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+    box-shadow: 0px 10px 10px #DCDBD7;
+}
+
+.header .menu{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    color: #494949;
+}
+
+.about-us .bg-img{ 
+    height: 75vh;   
+    background: linear-gradient(rgba(255, 220, 182, 0.9), rgba(255, 220, 182, 0.8)), url("../images/homebg.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+.about-us .bg-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button:focus{
+    outline: none;
+}
+
+.about-us button{
+    background: black;
+    color: white;
+}
+
+.services{
+    background: #F9F8F6;
+}
+
+.services img, .work img{
+    width: 100%;
+}
+
+.services .service-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.services button{
+    background: white;
+    border: 1px solid #D7D6D4;
+}
+
+.services .service-item .content.right{
+    padding-left: 100px;
+}
+
+.services .service-item .content.left{
+    padding-right: 100px;
+}
+
+.work .work-pictures{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+}
+
+.work .work-pictures img{
+    margin-bottom: 25px;
+}
+
+.work button{
+    text-align: center;
+    background: black;
+    color: white;
+    position: relative;
+    left: 45%;
+}
+
+.team{
+    background: #ffdcb6;
+}
+
+.team .team-detail{   
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team .team-detail .fas{
+    align-self: center;
+    font-size: 3em;
+}
+
+.team .team-detail hr{
+    margin: 25px auto;
+}
+
+.pagination{
+    text-align: center;
+    padding: 50px 0 100px 0;
+}
+
+.team .pagination .far, .client .far, .client .fas{
+    font-size: 0.75em;
+    margin: 0 5px;
+    transform: rotate(45deg);
+}
+
+.team .pagination .far:nth-child(1){
+    background: white;
+    color: white
+}
+
+.client .content{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+}
+
+.client .content .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.client .pics, .circle-display {
+    text-align: center;
+}
+
+.client .pics img{
+   width: 15%;
+}
+
+.contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/tuchbg.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.contact .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact .content p, input{
+    margin: 0 50px 50px 0;
+    color: white
+}
+.contact .content .left .fas, .far{
+    font-size: 0.75em;
+    margin-right: 15px;
+}
+
+.contact .media .fab{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.contact .content .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .content .right input{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #7E7D79;
+    padding-bottom: 10px;
+}
+
+.contact .content .right button{
+    background: white;
+    margin-top: 30vh;
+}
+
+.footer{
+    text-align: center;
+    height: 8vh;
+    font-size: 0.8em;
+}
+
+.footer .fas, span {
+    color: #f5c999;
+    padding: 0 10px;
+}
